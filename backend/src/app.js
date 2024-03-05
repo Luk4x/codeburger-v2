@@ -7,14 +7,14 @@ import routes from './routes';
 import './database';
 
 const corsOptions = {
-  origin: 'https://luk4x-codeburgerv2.netlify.app' || 'http://localhost:5173',
+  origin: 'https://luk4x-codeburgerv2.netlify.app',
   credentials: true
 };
 
 class App {
   constructor() {
     this.app = express();
-    this.app.use(cors(corsOptions));
+    this.app.use(cors());
 
     this.middlewares();
     this.routes();

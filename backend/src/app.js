@@ -7,7 +7,7 @@ import routes from './routes';
 import './database';
 
 const corsOptions = {
-  origin: 'https://luk4x-codeburgerv2.netlify.app',
+  origin: 'https://luk4x-codeburgerv2.netlify.app' || 'http://localhost:5173',
   credentials: true
 };
 

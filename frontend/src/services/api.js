@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 export const codeBurgerAPI = axios.create({
-  baseURL: 'https://codeburger-v2-production.up.railway.app'
+  baseURL: import.meta.env.VITE_API_URL
 });
 
 codeBurgerAPI.interceptors.request.use(config => {

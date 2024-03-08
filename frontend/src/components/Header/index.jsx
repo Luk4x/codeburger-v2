@@ -44,11 +44,14 @@ export function Header() {
             <img src={CartIcon} alt="Ícone de carrinho" />
           </StyledCartButton>
         </div>
-        <StyledUserInfo>
+        <StyledUserInfo isExtended={user?.admin}>
           <div>
             <img src={UserIcon} alt="Ícone de usuário" />
             <p>{user?.name}</p>
           </div>
+          {user?.admin && (
+            <button onClick={() => navigate('/gestao')}>Gestão</button>
+          )}
           <button onClick={logout}>Sair</button>
         </StyledUserInfo>
       </StyledContent>

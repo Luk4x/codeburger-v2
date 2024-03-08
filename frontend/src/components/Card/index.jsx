@@ -2,7 +2,7 @@ import HamburgerIcon from '../../assets/hamburger-icon.svg';
 import { Button } from '../Button';
 import { StyledContainer, StyledImage, StyledContent } from './styles';
 
-export function Card({ props, image, button, title, description }) {
+export function Card({ props, image, content, button, title, description }) {
   return (
     <StyledContainer {...props} $hasImage={!!image.src}>
       <StyledImage
@@ -10,10 +10,12 @@ export function Card({ props, image, button, title, description }) {
           ? { ...image }
           : { src: HamburgerIcon, alt: 'Ícone de Hamburger' })}
       />
-      <StyledContent>
+      <StyledContent {...content}>
         {title && <h2 {...title}>{title.label}</h2>}
-        {description && <p {...description}>{description.label}</p>}
-        {button && <Button {...button}>{button.label}</Button>}
+        <div>
+          {description && <p {...description}>{description.label}</p>}
+          {button && <Button {...button}>{button.label}</Button>}
+        </div>
       </StyledContent>
     </StyledContainer>
   );

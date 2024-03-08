@@ -9,6 +9,10 @@ export const StyledSection = styled(BaseStyledSection)`
     display: grid;
     grid-template-columns: 3fr 1fr;
     gap: 2rem;
+
+    @media screen and (max-width: 1180px) {
+      grid-template-columns: 1fr;
+    }
   }
 `;
 
@@ -128,6 +132,19 @@ export const StyledSummary = styled.div`
     p {
       font-weight: 500;
       font-size: 1.125rem;
+    }
+  }
+
+  @media screen and (max-width: 1180px) {
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    button {
+      width: 12.5rem;
+      margin-top: 2.5rem;
+      align-self: end;
     }
   }
 `;

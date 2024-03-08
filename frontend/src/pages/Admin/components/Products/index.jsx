@@ -29,6 +29,7 @@ import {
 export function Products() {
   const [modal, setModal] = useState({ open: false, data: undefined });
   const { products, updateProducts } = useBasicData();
+  console.log(products);
 
   const actions = [
     {

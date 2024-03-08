@@ -15,6 +15,7 @@ export const StyledSection = styled.section`
 `;
 
 export const StyledEmpty = styled.h2`
+  margin: 0 1.5rem;
   font-size: 2rem;
   font-weight: 700;
   color: #424242;

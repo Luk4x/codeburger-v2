@@ -9,8 +9,9 @@ export const StyledContainer = styled.div`
     color: #efefef;
     background: #9758a6;
     border: 2px solid transparent;
-    padding-bottom: 3.125rem;
+    padding-bottom: 3.375rem;
     padding-left: 0.125rem;
+    border-radius: 0.5rem;
   }
 
   .rec.rec-arrow:hover {

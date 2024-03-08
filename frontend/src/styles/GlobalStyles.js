@@ -23,4 +23,18 @@ export default createGlobalStyle`
     background: #9758a6;
     color: #fff;
   }
+
+  ::-webkit-scrollbar {
+    width: 0.4375rem;
+    height: 0.4375rem;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #EFEFEF;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    background:#9758a6
+  }
 `;

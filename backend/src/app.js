@@ -1,3 +1,4 @@
+import 'dotenv/config';
 import express from 'express';
 import { resolve } from 'path';
 import cors from 'cors';
@@ -7,14 +8,14 @@ import routes from './routes';
 import './database';
 
 const corsOptions = {
-  origin: 'https://luk4x-codeburgerv2.netlify.app',
+  origin: process.env.FRONT_END_URL,
   credentials: true
 };
 
 class App {
   constructor() {
     this.app = express();
-    this.app.use(cors());
+    this.app.use(cors(corsOptions));
 
     this.middlewares();
     this.routes();

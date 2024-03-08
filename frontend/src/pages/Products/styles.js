@@ -6,13 +6,6 @@ export { StyledBanner, StyledEmpty } from '../Home/styles';
 export const StyledSection = styled(BaseStyledSection)`
   padding: 1.5rem 0 6.25rem;
   gap: 3rem;
-
-  & > nav {
-    display: flex;
-    gap: 3rem;
-    justify-content: center;
-    align-items: center;
-  }
 `;
 
 export const StyledCategory = styled.button`
@@ -32,8 +25,16 @@ export const StyledCategory = styled.button`
 
 export const StyledProducts = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   place-items: center;
   gap: 1.75rem;
   width: 85%;
+
+  @media screen and (max-width: 1480px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (max-width: 980px) {
+    grid-template-columns: 1fr;
+  }
 `;

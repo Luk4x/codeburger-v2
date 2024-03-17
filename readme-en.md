@@ -12,7 +12,7 @@
 </table>
 
 ![luk4x-repo-status](https://img.shields.io/badge/Status-Finished-lightgrey?style=for-the-badge&logo=headspace&logoColor=green&color=lightgrey)
-![luk4x-repo-license](https://img.shields.io/github/license/Luk4x/codeburger-v2?style=for-the-badge&logo=unlicense&logoColor=lightgrey)
+![luk4x-repo-license](https://img.shields.io/github/license/Luk4x/codeburger-v2?style=for-the-badge&logo=unlicense)
 # 🍔 CodeBurger v2
 
 <br>

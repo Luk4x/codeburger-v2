@@ -28,11 +28,11 @@
 <br>
 
 ## 📹 Apresentação em Vídeo do Projeto
-<div align="center">
-  <video src="./codeburgerv2-presentation.mp4" />
-</div>
+<a href="https://www.youtube.com/watch?v=-kOThVFZjxs" target="_blank">
+  <img align="center" src="https://github.com/Luk4x/codeburger-v2/assets/86276393/72304b0f-d81f-443b-ae15-9fb3397b9b69" />
+<a/>
 
-> **Caso o vídeo apresente algum erro, recarregue a página!**<br>
+> **Clique para conferir o vídeo de apresentação no Youtube!**<br>
 
 ## 🚀 Tecnologias Utilizadas
 

@@ -13,6 +13,10 @@ export const StyledHeader = styled.header`
     display: flex;
     gap: 2rem;
   }
+
+  @media screen and (max-width: 900px) {
+    padding: 0 8rem 0 1rem;
+  }
 `;
 
 export const StyledLinkButton = styled.button`
@@ -118,8 +122,12 @@ export const StyledUserInfo = styled.div`
     font-weight: 500;
   }
 
+  & > button:hover {
+    text-decoration: underline;
+  }
+
   &:hover {
-    height: 80px;
+    height: ${({ isExtended }) => (isExtended ? 104 : 80)}px;
     box-shadow: 0px 10px 40px 0px #00000018;
   }
 `;

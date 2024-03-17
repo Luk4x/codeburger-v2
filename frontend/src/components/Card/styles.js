@@ -7,10 +7,9 @@ export const StyledContainer = styled.div`
 `;
 
 export const StyledImage = styled.img`
+  min-width: ${({ $size }) => `${$size}px`};
   width: 100%;
-  height: 100%;
-  max-width: ${({ $size }) => `${$size}px`};
-  max-height: ${({ $size }) => `${$size}px`};
+  height: ${({ $size }) => `${$size}px`};
   object-fit: cover;
   background: ${({ $hasImage }) => ($hasImage ? 'none' : '#9758A6CC')};
   border-radius: 8px;
@@ -21,13 +20,14 @@ export const StyledContent = styled.div`
   flex-direction: column;
   gap: 0.5rem;
 
-  & > h2 {
+  h2 {
     font-size: 1.375rem;
     font-weight: 700;
     color: #424242;
   }
 
-  & > p {
+  p {
+    margin: 0.25rem 0;
     font-size: 1.25rem;
     font-weight: 500;
     color: #212121;

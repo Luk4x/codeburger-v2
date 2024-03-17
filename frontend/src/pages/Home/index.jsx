@@ -26,7 +26,7 @@ export function Home() {
             {categories.map(({ id, url, name }) => (
               <Card
                 key={id}
-                image={{ src: url, alt: name, $size: 280 }}
+                image={{ src: url, alt: name, $size: 220 }}
                 button={{
                   label: name,
                   onClick: () =>
@@ -52,7 +52,7 @@ export function Home() {
             {offers.map(product => (
               <Card
                 key={product.id}
-                image={{ src: product.url, alt: product.name, $size: 280 }}
+                image={{ src: product.url, alt: product.name, $size: 220 }}
                 button={{
                   label: 'Comprar',
                   onClick: () => {
@@ -65,6 +65,7 @@ export function Home() {
                 props={{
                   style: {
                     width: 280,
+                    height: '100%',
                     margin: '0 1rem'
                   }
                 }}

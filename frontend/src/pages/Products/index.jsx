@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useLocation } from 'react-router-dom';
 
 import ProductsBanner from '../../assets/products-banner.svg';
+import { Carousel } from '../../components';
 import { Card } from '../../components/Card';
 import { useBasicData } from '../../hooks';
 import { formatPrice } from '../../utils/formatNumber';
@@ -30,7 +31,7 @@ export function Products() {
         alt="Banner do CodeBurger, com um Hamburger em cima de uma mesa"
       />
       <StyledSection $background="#EFEFEF">
-        <nav>
+        <Carousel>
           {[{ id: 0, name: 'Todos' }, ...categories].map(({ id, name }) => (
             <StyledCategory
               $active={activeCategory === id}
@@ -43,7 +44,7 @@ export function Products() {
               {name}
             </StyledCategory>
           ))}
-        </nav>
+        </Carousel>
         {filteredProducts.length > 0 ? (
           <StyledProducts>
             {filteredProducts.map(product => (
@@ -54,10 +55,17 @@ export function Products() {
                   label: 'Adicionar',
                   onClick: () => updateCart(product)
                 }}
-                title={{ label: product.name, style: { fontWeight: 'normal' } }}
+                title={{
+                  label: product.name,
+                  style: { fontWeight: 'normal' }
+                }}
                 description={{
-                  label: formatPrice(product.price),
-                  style: { marginTop: '48%' }
+                  label: formatPrice(product.price)
+                }}
+                content={{
+                  style: {
+                    justifyContent: 'space-between'
+                  }
                 }}
                 props={{
                   style: {
@@ -68,7 +76,8 @@ export function Products() {
                     background: '#fff',
                     borderRadius: '12px',
                     padding: '0.875rem',
-                    boxShadow: ' 0 30px 60px 0 #3939391A'
+                    boxShadow: ' 0 30px 60px 0 #3939391A',
+                    height: 220
                   }
                 }}
               />

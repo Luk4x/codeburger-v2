@@ -10,7 +10,7 @@ export class Category extends Model {
           type: Sequelize.VIRTUAL,
           get() {
             return this.path
-              ? `https://codeburger-v2-production.up.railway.app/category-file/${this.path}`
+              ? `${process.env.API_URL}/category-file/${this.path}`
               : null;
           }
         }

@@ -1,12 +1,12 @@
 <table align="right">
   <tr>
     <td>
-      <a href="readme-en.md">🇺🇸 English</a>
+      <b><a href="readme-en.md">🇺🇸 English</a></b>
     </td>
   </tr>
   <tr>
     <td>
-      <b><a href="README.md">🇧🇷 Português</a></b>
+      <a href="README.md">🇧🇷 Português</a>
     </td>
   </tr>
 </table>
@@ -17,26 +17,27 @@
 
 <br>
 <p align="center">
-  <a href="#-apresentação-em-vídeo-do-projeto">Vídeo</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-tecnologias-utilizadas">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-sobre">Sobre</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-páginas-frontend">Páginas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-rotas-backend">Rotas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-clonando-o-projeto">Clone</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-contato-dos-contribuintes">Contato</a>
+  <a href="#-project-video-presentation">Video</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-technologies-used">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-about">About</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-pages-frontend">Pages</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-routes-backend">Routes</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-cloning-the-project">Cloning</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-contributor-contact">Contact</a>
 </p>
 <br>
 
-## 📹 Apresentação em Vídeo do Projeto
+## 📹 Project Video Presentation
+
 <a href="https://www.youtube.com/watch?v=-kOThVFZjxs" target="_blank">
   <img align="center" src="https://github.com/Luk4x/codeburger-v2/assets/86276393/72304b0f-d81f-443b-ae15-9fb3397b9b69" />
 <a/>
 
-> **Clique para conferir o vídeo de apresentação no Youtube!**<br>
+> **Click to check out the presentation video on Youtube!**<br>
 
-## 🚀 Tecnologias Utilizadas
+## 🚀 Technologies Used
 
-> Abaixo estão as 19 principais tecnologias utilizadas no desenvolvimento do projeto
+> Below are the 19 main technologies used in the development of the project, and their reasons
 
 <table align="center">
   <tr>
@@ -249,83 +250,83 @@
   </tr>
 </table>
 
-## 📝 Sobre
+## 📝 About
 
-> Assistir o vídeo acima ajudará na compreensão da explicação!
+> Watching the video above will help you understand the explanation!
  
 <img align="right" src="https://user-images.githubusercontent.com/86276393/212980660-edc0babb-f014-439f-b823-4a4e9ece7d45.png" alt="notepad icon" />
-A aplicação se consiste num projeto FullStack de uma plataforma web para uma hamburgueria.
+The application consists of a FullStack project for a web platform for a burger restaurant.
 <br/><br/>
-Como <b>Cliente</b>, você pode criar uma conta (ou entrar caso você já tenha uma), ver os produtos cadastrados e fazer pedidos. Não tem acesso a funcionalidade e páginas de administradores.
+As a <b>Customer</b>, you can create an account (or log in if you already have one), view the registered products and place orders. Does not have access to functionality and administrator pages.
 <br/>
-Como <b>Administrador</b>, além de poder fazer tudo o que um usuário pode, ele pode gerenciar a plataforma: adicionando, removendo ou editando pedidos e acessar o histórico de pedidos e controlar o status de cada pedido.
+As an <b>Administrator</b>, in addition to being able to do everything a user can, he can manage the platform: adding, removing or editing orders and accessing the order history and controlling the status of each order.
 <br/><br/>
 
-### 📄 Páginas (Frontend)
+### 📄 Pages (Frontend)
 
-  - `pages/SignUp` __(/cadastrar)__: Por essa página o usuário pode criar uma conta;
-  - `pages/Login` __(/entrar)__: Por essa página o usuário pode entrar na sua conta;
-  - `pages/Home` __(/)__: Página que o usuário é redirecionado após criar ou entrar na sua conta. Basicamente, nela o usuário pode ver as categorias de produtos e ir para a página de __/produtos__ já com a categoria clicada selecionada, e também pode ver os produtos em oferta e facilmente fazer um pedido ao ir para a página de __/carrinho__ com o produto clicado já adicionado no carrinho;
-  - `pages/Products` __(/produtos)__: Nessa página o usuário pode ver todos os produtos cadastrados na plataforma, filtrá-los por categoria, e adicioná-los ao carrinho de compras caso queira;
-  - `pages/Cart` __(/carrinho)__: Nessa página o usuário pode ver informações pertinentes sobre a compra, como todos os produtos que estão em seu carrinho, o preço total e a taxa da compra, e também pode aumentar a quantidade de algum produto, e realizar o pedido caso queira;
-  - `pages/Admin` __(/gestao)__: Nessa página, o administrador pode gerenciar a plataforma, adicionando, removendo ou editando pedidos e acessar o histórico de pedidos e controlar o status de cada pedido;
+   - `pages/SignUp` __(/cadastrar)__: Through this page the user can create an account;
+   - `pages/Login` __(/entrar)__: Through this page the user can log in to their account;
+   - `pages/Home` __(/)__: Page that the user is redirected to after creating or logging into their account. Basically, the user can see the product categories and go to the __/produtos__ page with the clicked category already selected, and can also see the products on offer and easily place an order by going to the __/carrinho__ with the clicked product already added to the cart;
+   - `pages/Products` __(/produtos)__: On this page the user can see all the products registered on the platform, filter them by category, and add them to the shopping cart if they wish;
+   - `pages/Cart` __(/carrinho)__: On this page the user can see pertinent information about the purchase, such as all the products in their cart, the total price and purchase fee, and can also increase the quantity of a product, and place the order if you wish;
+   - `pages/Admin` __(/gestao)__: On this page, the administrator can manage the platform, adding, removing or editing orders and accessing the order history and controlling the status of each order;
 
-Todas as páginas possuem suas devidas validações e tratamento de possíveis erros.
+All pages have their proper validations and treatment of possible errors.
 <br />
-A lógica utilizada na rotas privadas foi: __/cadastrar__ e __/entrar__ estão disponíveis apenas para usuários que não estão logados, as demais estão disponíveis apenas para usuários logados, e a __/gestao__ está disponível apenas para administradores.
+The logic used in the private routes was: __/register__ and __/enter__ are only available to users who are not logged in, the others are only available to logged in users, and __/gestao__ is only available to administrators.
 <br />
-Desenvolvi do zero os componentes que são usados em quase todas as páginas, exceto a __/gestao__, onde optei por utilizar o [MUI](https://mui.com/).
+I developed from scratch the components that are used on almost all pages, except __/gestao__, where I chose to use [MUI](https://mui.com/).
  
-### 📄 Rotas (Backend)
+### 📄 Routes (Backend)
 
-  - `controllers/UserController` __(POST: /users)__: Espera receber os dados necessários para a criação de um usuário (_name_, _email_, _password_, _admin_), cria um usuário e retorna o novo usuário criado;
-  - `controllers/SessionController` __(POST: /sessions)__: Espera receber os dados necessários para a realização do login do usuário (_email_, _password_), e retorna as informações do usuário (e um _token_);
-  - `controllers/ProductController`:
-    - __(POST: /products)__: Espera receber os dados necessários para a criação de um produto (_name_, _price_, _category_id_, _offer_, _file_)), cria um produto, e retorna o novo produto criado, e a lista atualizada com todos os produtos;
-    - __(PUT: /products/:id)__: Espera receber os dados necessários para a edição de um produto (_name_, _price_, _category_id_, _offer_, _file_), edita o produto de _id_ recebido, e retorna o produto atualizado, e a lista atualizada com todos os produtos;
-    - __(DELETE: /products/:id)__: Espera receber o _id_ do produto a ser delete, deleta tal produto, e retorna o produto deletado;
-    - __(GET: /products)__: Retorna a lista de produtos cadastrados;
-  - `controllers/CategoryController`:
-    - __(POST: /categories)__: Espera receber os dados necessários para a criação de uma categoria (_name_, _file_), cria uma categoria, e retorna a nova categoria criada;
-    - __(PUT: /categories/:id)__: Espera receber os dados necessários para a edição de uma categoria (_name_, _file_), edita a categoria de _id_ recebido, e retorna a categoria atualizada;
-    - __(GET: /categories)__: Retorna a lista de categorias cadastradas;
-  - `controllers/OrderController`:
-    - __(POST: /orders)__: Espera receber os dados necessários para a criação de um pedido (uma lista de objetos com _id_, _quantity_), formata a lista de objetos, populando cada objeto com os dados do produto de cada _id_, cria o pedido, contendo os produtos comprados, o usuário que comprou e o status inicial de _order-placed_, e retorna o pedido;
-    - __(PUT: /orders/:id)__: Espera receber o novo _status_ do pedido, atualiza o pedido de _id_ recebido, e retorna o pedido atualizado;
-    - __(GET: /orders)__: Retorna a lista de pedidos realizados;
+   - `controllers/UserController` __(POST: /users)__: Waits to receive the data necessary to create a user (_name_, _email_, _password_, _admin_), creates a user and returns the new created user;
+   - `controllers/SessionController` __(POST: /sessions)__: Waits to receive the data necessary to log in to the user (_email_, _password_), and returns the user information (and a _token_);
+   - `controllers/ProductController`:
+     - __(POST: /products)__: Waits to receive the data necessary to create a product (_name_, _price_, _category_id_, _offer_, _file_)), creates a product, and returns the new product created, and the list updated with all the products;
+     - __(PUT: /products/:id)__: Waits to receive the data necessary to edit a product (_name_, _price_, _category_id_, _offer_, _file_), edits the product with _id_ received, and returns the updated product, and the updated list with all products;
+     - __(DELETE: /products/:id)__: Waits to receive the _id_ of the product to be deleted, deletes that product, and returns the deleted product;
+     - __(GET: /products)__: Returns the list of registered products;
+   - `controllers/CategoryController`:
+     - __(POST: /categories)__: Waits to receive the data necessary to create a category (_name_, _file_), creates a category, and returns the new created category;
+     - __(PUT: /categories/:id)__: Waits to receive the data necessary to edit a category (_name_, _file_), edits the category of _id_ received, and returns the updated category;
+     - __(GET: /categories)__: Returns the list of registered categories;
+   - `controllers/OrderController`:
+     - __(POST: /orders)__: Waits to receive the data necessary to create an order (a list of objects with _id_, _quantity_), formats the list of objects, populating each object with the product data of each _id_, creates the order, containing the purchased products, the user who purchased it and the initial status of _order-placed_, and returns the order;
+     - __(PUT: /orders/:id)__: Waits to receive the new _status_ of the order, updates the order _id_ received, and returns the updated order;
+     - __(GET: /orders)__: Returns the list of orders placed;
 
-Todas as rotas possuem suas devidas validações e tratamento de possíveis erros.
+All routes have their proper validations and treatment of possible errors.
 <br />
-Um middleware para auxiliar na autenticação é usado em quase todas as rotas, exceto na __/users__ e __/sessions__.
+Middleware to assist with authentication is used in almost all routes except __/users__ and __/sessions__.
 
-## 📖 Clonando o Projeto
+## 📖 Cloning the Project
 
-Para clonar e executar este projeto em seu computador, você precisará do [Git](https://git-scm.com/) e [Node.js v20.10.0](https://nodejs.org/en/) ou superior previamente instalados.<br>
-Feito isso, no terminal:
+To clone and run this project on your computer you will need [Git](https://git-scm.com/) and [Node.js v20.10.0](https://nodejs.org/en/) or higher and previously installed.<br>
+After that, in the terminal:
 
 ```bash
-# Clone esse repositório com:
+# Clone this repository with:
 > git clone https://github.com/Luk4x/codeburger-v2.git
 
-# Entre no repositório com:
+# Enter the repository with:
 > cd codeburger-v2
 
-# Estando agora na raiz do projeto, crie um arquivo `.env`, seguindo o `.env.example` de cada projeto como base.
+# Now being at the root of the project, create a `.env` file, following the `.env.example` of each project as a base.
 
-# Execute o Backend em outro terminal:
+# Run the Backend in another terminal:
 > cd backend
 > yarn install
 > yarn dev
 
-# Execute o Frontend em um terminal:
+# Run the Frontend in another terminal:
 > cd frontend
 > yarn install
 > yarn dev
 
-# Feito isso, você já poderá estar acessando o projeto em: http://localhost:5173/
+# Once this is done, you will be able to access the project at: http://localhost:5173/
 ```
 
-## 📞 Contato dos Contribuintes
+## 📞 Contributor Contact
 
 <table border="2">
   <tr>
@@ -362,7 +363,7 @@ Feito isso, no terminal:
 </table>
 
 <p align="right">
-  <a href="#-codeburger-v2">Voltar ao Topo</a>
+  <a href="#-codeburger-v2">Back to Top</a>
 </p>
 
 <!--
